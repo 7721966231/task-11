@@ -1,6 +1,4 @@
 function startEmotionDetection() {
-    // This function will call your Python backend for emotion detection
-    // and update the emotion text and play music accordingly
     fetch('/detect_emotion')
         .then(response => response.json())
         .then(data => {
